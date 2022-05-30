@@ -1,0 +1,56 @@
+body {
+    border-top: 20px solid #FFF;
+}
+
+.button, 
+button  /*catches all inputs with attribute type=button, these are 2 button selectors listed via comma, it is not 1*/
+{
+    display:inline-block;
+    padding: 1rem 2rem;
+    border: 2px solid #000;
+    text-decoration:none;
+    font-size: 1rem;
+    color:#000;
+    background:transparent;
+    border-radius: 3rem;
+    cursor: pointer;
+        /*3 rem cuz padding below and above is 1rem and font-size is 1rem, too*/
+}
+
+
+.button.hover,
+button.hover,
+.button:hover,
+button:hover{
+    color: #090;
+    border-color: currentColor;
+    background: white;
+}
+
+.button.filled.hover,
+button.filled.hover,
+.button.filled:hover,
+button.filled:hover {
+    background: #090;
+    border-color: #090;
+    color: #FFF; 
+
+}
+
+.button.filled,  /*all elements that have class button and field */
+button.filled {  /*all elements that are button and class field */
+     background: #000;   
+     color: #FFF; 
+}
+
+.button.icon,
+button.icon {
+    background: #000;
+    color: #FFF;
+}
+
+.button.icon i,  /*if .button.icon >i se otnasq samo za decata*/
+button.icon i{
+    display: inline-block;
+    padding-right: 0.5rem;
+}

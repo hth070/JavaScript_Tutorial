@@ -1,0 +1,32 @@
+@import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css');
+@import url('reset.css');
+@import url('typography.css');
+@import url('general.css'); 
+
+
+body {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white; 
+    background-image: #F00 url('image.png'), url('piciicic') left top no-repeat, ; 
+    background-size: contain; /*or cover; or contain*/
+}
+
+
+h1 {
+    font-size: 200%;
+    line-height: 1;
+}
+
+blockquote {
+    padding-left: 4em;
+    font-style: italic;
+    opacity: 0.8;
+    font-family: serif;
+}
+
+blockquote p: last-child {
+    padding-bottom: 0; 
+}
+
+/*      */

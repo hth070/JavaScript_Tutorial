@@ -1,0 +1,18 @@
+@import url("buttons.css");
+
+html {
+    font: 16px/1.5 Verdana, sans-serif;
+}
+
+body, input, button {   /*or form intead of button*/
+    font: inherit;
+}
+
+body {
+    background: #FFF;
+}
+
+.button.fill { /* i want all elements which simultaneously have class button and class fill*/
+}
+
+.button .fill /*i want all elements with class fill which are inside class button*/ 

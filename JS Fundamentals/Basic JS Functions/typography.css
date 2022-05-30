@@ -1,0 +1,127 @@
+@import url('styles.css');
+@import url()
+
+
+html {
+    font: 16px/1.5 Playfair Display,'Courier New', Courier, monospace;;    /*syntax unique for font, and we save font, size and family*/
+}
+
+body, input, textarea, option, select, table, form{ /*we tell all elements:inherit the value,, have the same value as the parent*/
+    font:inherit;
+}
+
+code {
+     font-family: "Courier New", Courier, monospace;
+}
+                                                      /*20/14=1.4285..*/   /*type-scale.com calculaotr!!!!!!!!!!!!!!*/
+h1, h2, h3, h4, h5, h6 {
+        font-family: Helvetica, sans-serif;
+        line-height: 1.1;
+        padding-bottom: 0.5 em; /*0.5em from the size of the current heading & h1 = 0.5 X 2.5 !!!!!!*/
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 600px; /*width vs max width difference, could be done in px or %(%  is riskier, padding is better), padding - prostranstvo otlqvo i otdqsno*/                    
+    padding: 20px;    /*font-size e razmera na shrifta*/
+
+    font-family: Playfair Display, Courier New, Courier, monospace;
+    margin: 0 auto;
+    text-align: justify;
+
+.sidebar {
+    font-size:0.9rem; /*90% of current font size*/
+}
+
+}
+
+h1 {
+    font-size: 200%; /*zaglavieto shte e 3x po-golqmo ot standartniq text*/
+    line-height: 1;
+}
+
+h1 { font-size: 2.5em; } /*these refer to the parent of the element*/ /*become 2.5 em out of 32 px because article = 2em*/
+h2 { font-size: 2.1em; } /*THE SIZE HERE IS Х 2.1 x 16*/
+h3 { font-size: 1.75em; }
+h4 { font-size: 1.45em; }
+h5 { font-size: 1.2m; }
+h6 { font-size: 1em; }   /*here 1em = 16 px*/
+
+p, ul, ol {                        /*list-style-type property w3*/
+    padding-bottom: 1.5em;
+}
+
+ul, ol {
+    padding-left: 2rem;
+}
+
+li ul, li ol {
+    padding-top: 0.5em;
+}
+
+li ul li{
+    list-style-type:circle;
+}
+
+li ul li {
+    list-style-type: circle;
+}
+
+
+li ul li ul li {
+    list-style-type: square;
+}
+
+article {
+    font-size: 2em;
+}
+
+li {
+list-style:circle inside; /*or outside*/
+padding-left:1rem;
+}
+
+/**fotnawseome.com.icons/
+
+
+/*stylistic difference between different elements*/
+/*Padding is bug, because font size is big*/
+/*HTML font:12 is for smartphone, all gets minimized*/
+
+
+/*selects a nabor of elements which we tell what to do /tag=element /
+2) rules = each rule has property and value 3)short-hand properties more than 1 thing at a time)*/
+/*no need to remember all properties; border, border-width is property, after = is the value*/
+/*CSS is a set of rules about how certain elements should look*/
+/*what is a class, id, attribute, element selector*/
+/*element selector, descendance selector*/
+
+
+/*.main.content {                 refers to all sections inside the article*/ /*.content class - catches all elements with class atribute where there is content 
+    border: solid blue;       main.conentn is mor specific so it becomes blue, and does not remain red
+    border-width: 0 0 0 4px;    if there is nonsensical selector from listed selectors - no result ,breaks 
+    padding: 2px 0; 
+}
+
+.content {
+    border: solid #F00;
+    border-width: 0 0 0 4px;
+}
+
+article > section {      
+ border: none;   refers to all sections that are direct "children" of the article 
+}
+
+body  {
+    background: white; 
+}
+
+body {
+    font-size: 32px;
+    line-height: 1.5;
+
+    max-width: 600px; width vs max width difference
+    margin: 0 auto;
+}
+*/

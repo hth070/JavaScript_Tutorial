@@ -1,0 +1,24 @@
+@import url(a href=#);
+@import url(a href=#);
+
+/*Reset.css*/
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+/*Box sizing*/
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit; 
+}
+
+html {
+    font: 16px/1.5 PT Sans, Helvetica, Verdana, sans-serif;
+}

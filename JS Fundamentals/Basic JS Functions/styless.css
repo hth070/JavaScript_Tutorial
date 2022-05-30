@@ -1,0 +1,67 @@
+/* body {
+    padding: 2rem;
+    margin:0;
+} */
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    background: #900; 
+    /* padding: 2rem; */ /*container size comes from pading we have put*/
+    /* overflow: hidden; */    /*cut whatever is inside, but bigger than object*/
+}
+
+.container:after {   /*pseudo el-t created inside cotainer, browser thinks container el- tis 0 px, 0 height, but inside we create after element of 1rem*/
+    display: block;
+    content:"";
+    height: 0; /* or = 1rem  */
+    background: #090; 
+     clear:both;    /*positioning it after the boxes*/
+}
+
+.box {
+    width: 33.3%; /*300px*/
+    height: 300px;
+    /* padding: 1rem; */ /* cells enlarged */
+    /* background: #000; */
+    outline: 4px solid #000;  /*border*/
+    margin-bottom: 1rem; 
+    float: left;   /*problem here is the element exits the main calculation matrix*/
+    color: #FFF; 
+}
+
+.box:hover {                /*pseude selector */
+    background: #F00; 
+}
+
+.box:before, .box:after { /*or first-child or first-of-type or after*/
+    content: ""
+}
+
+/* .cleaner {
+    clear: both; 
+} */
+ 
+article {                  /*article is a block element & should take up all space, but cuz there are float elemets - */
+    background: #F00;   /*and float is not cleared the txt we have inside (we have h1, p) the text floats, and rest of elements are below. */
+}                      /*float was not meant for layout*/
+
+/*Interview question: what is the height of this container that has 2-3 floated elements*/
+
+ul {
+    padding: 0;
+}
+
+html {
+    font: 16px/1.5 Verdana, sans-serif; 
+}
+
+body{
+
+}
+
+ul li {
+    list-style: inside;
+}

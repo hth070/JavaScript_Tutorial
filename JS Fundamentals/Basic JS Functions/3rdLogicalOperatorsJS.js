@@ -1,0 +1,41 @@
+//let pesho = 1 && 2 && 3;
+
+//console.log(pesho);
+
+///////////////////////////////////////////////////////////////////////////
+
+//let pesho = 0 || 2 || 3;
+
+//console.log(pesho);
+///////////////////////////////////////////////////////////////////////////
+
+//let pesho = 1 && 0 && 3;
+
+//console.log(pesho);
+
+/////////////////////////////////////////////////////////
+
+//let pesho = 1 && 2 && false; //&& will find last true value that we have in a list after an &&
+
+//console.log(pesho);
+
+/////////////////////////////////////////////////////////////////////////
+
+//let pesho = 1 && 2 && "false" && "pesho"; //lsdsdf is not dfined, will go back to past valid inout
+
+//let pesho1 = 0 || 0 || null; //1st true we see will be returned to us
+
+//console.log(pesho1); 
+
+////////////////////////////////////////////////////////////////////////
+
+//if (a && b && c) {
+
+//}
+//!!a -> converts to boolean
+//console.log(pesho1);
+
+//////////////////////////////////////////////////////////////////////////
+
+let pesho1 = "0" != 0; // we must forget about == because it comapres value only, and not type
+console.log(pesho1); //resutls in true 

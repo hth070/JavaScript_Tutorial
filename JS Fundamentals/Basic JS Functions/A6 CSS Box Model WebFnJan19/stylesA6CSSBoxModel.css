@@ -1,0 +1,52 @@
+body {
+    padding: 2rem;
+    margin: 0;
+}
+
+.box {   /*we define a class here*/ /*no border, width=30%*/ /*div takes all the space*/
+    width: 30%; /*3 x 30 = 90, 10 % remain, we canno create border and padding on a width element*/
+    display: inline-block;
+              /*height = 1rem (below) + 1rem (above) + 0.5rem (above n below) = 3 rem */
+    font-size: 2rem; 
+    text-align: center;
+    line-height: 1;      /*line height > 1 box enlarges*/
+    margin: 0 0 1rem 0; /*clock-wise this is bottom margin*/
+}
+
+.box.inner { /*goes in*/
+    border: 0.5rem solid #090; 
+    padding: 1rem;     
+}
+
+#box1 { /*347px, imame i padding i border or = border (both sides) +margin  widtht (left padding content right border), razpyva kutqta  */
+    width: 300px;
+
+}
+
+
+#box2 {
+    width: 350px;
+}
+ 
+p {
+     border: 0.2rem solid #000;
+}
+
+#box3 {
+    width:400px; /*we go to the next row*/
+}
+
+strong {
+     border: 1.2rem solid firebrick;
+     display: inline-block; /*if we remove this the height is not mirrored, same for width*/
+     height: 300px; /*becomes too tall*/
+     width: 300px;
+     display: inline-block; /*or simply block*/
+}
+
+/*block elements  */
+/*article, header, paragraph golemite struktuni elementi  sa blokovi, kato tezi */
+/*all other tags that describe text - strong, em, span(kato div), malko za inline elementite */
+/*inline elementite sa malko, ne chupqt, "a" syshto*/
+/*ako mu kajem na tag-a width 300 i ne stane - znachi e inline element*/
+/*otvarqme inspektora i ni kazva po podrazbirane*/

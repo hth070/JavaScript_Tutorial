@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<body>
+        <h6>JavaScript in the HTML page</h6>
+        <span>
+            test1
+        </span>
+        <div>
+            test2
+        </div>
+        <!-- <ul>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+        </ul>-->
+        <script>
+        function nums(n) {
+            let html = '<ul>\n';    //this is the initial value  = ul
+            for (let i = 1; i <= n; i++) {   //cikkyl pochva ot 1 i stiga do n 
+                let color = 'blue'; // we decalre variable color
+        if (i % 2 !== 0) { 
+            color = 'green';
+        } //if current number is odd - green
+
+        html += `<li><span style='color: ${color}'> ${i}</span></li>\n`; // with += we add this to the already existing text, inserting var value with ${colorforex}
+        
+    }
+    html += '</ul>';
+    return html;
+}
+        //document.body.innerHTML = nums(10); //innherHTML is a bit dangerous to use, espcecially on the body, it's like console.log
+        </script>
+</body>
+</html>
+
+
+
+
+

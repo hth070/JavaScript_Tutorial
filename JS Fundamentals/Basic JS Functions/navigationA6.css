@@ -1,0 +1,25 @@
+
+.site-header nav {
+
+}
+.site-header nav ul {
+
+}
+
+.site-header nav li {
+    display: inline-block;
+} color
+
+.site-header nav a {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 1px solid
+}
+
+.site-header nav a: focus,
+.site-header nav a: hover {
+    border: color #000;;
+    background: #000;;
+    color: #fff;
+    outline:none;
+}

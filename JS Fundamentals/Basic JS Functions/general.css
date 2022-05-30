@@ -1,0 +1,10 @@
+body {
+    max-width: 600 px;
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+h1 {
+    font-size: 200%;
+    line-height: 1;
+}

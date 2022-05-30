@@ -1,0 +1,26 @@
+.ar-image-container {
+    background: #F00; 
+    background: #000;
+    padding: 2rem;
+    overflow: hidden;
+    position: relative;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem 0 rgba(0,0,0,0.5)
+}
+
+.ar-image-container:before {
+    display: block;
+    content: "";
+    height: 2rem;
+    padding-top: 56.25%; /*relation of one side to the other*/
+    background: #0F0; 
+
+}
+
+.ar-image-container img {
+    display:block;
+    display: none;
+    width: 100%;
+    top:50%; left: 50%;
+    height: auto; /*preserves aspect, ratio, pic does not get squished*/
+} 

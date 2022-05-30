@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+        <style>
+            body { background: #CCC; }
+
+            .chessboard { display: inline-block; }
+
+            .black, .white {                  /*tuka slagame 1 i sysht stil i na black i n white , na 2 razlichni klasa*/
+            width:50px; 
+            height:50px;
+            display: inline-block;       /*if we remove this bloc nothing will come up cuz span will have no content, they have no width to expand them*/
+            }
+
+            .black { background: black; }
+            .white { background: white; }
+    
+        </style>
+    <body>
+    <h1>JavaScript in the HTML page</h1>
+
+</html>
+<script>
+function chessboard(size) {
+    let html = '<div class ="chessboard">\n';
+    for (let row = 0; row < size; row++) { //broim redove dokato ne stignem razmera na iskanata shahmatna dyska
+        html += '   <div>\n'; //for each row we add a new div
+            let color = (row % 2 === 0) ? 'black' : 'white';
+            for (let col = 0; col < size; col++) { // a cycle inside a cycle where we declare columns
+            html += `<span class="${color}"></span>\n`;
+            color = (color === 'white') ? 'black' : 'white';
+        }    
+        html += '</div>\n';    
+    }
+    return html + '</div>';
+}
+ document.body.innerHTML = chessboard(6);
+</script>
+
+
+<!--2:04:00 from https://www.youtube.com/watch?v=hUGlfiHp3v4&feature=youtu.be
+
+
+with 1st cycle obhojdame vseki 1 red i pravim divove za vseki 1 red
+// s 2q - vsqka edna kolkonka, kvadratchetata sa spanove
+//html tags can have attributes like
+// id, class (says which CSS or styling class to be used in this element, and these classes need to be declared in advance),
+// type, placeholder, name =, href
+//inline-block is inline block element, keeps row consequence, but has width and height (does not take that of text)
+//so we are saying that all elements that have white or black class we want them to be as boxes with this height and width-->

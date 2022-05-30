@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+
+        <a href="#">Testing</a>
+
+        <form action="#" method="POST"> <!--GET e po podrazbirane-->
+            <fieldset><!-- provides connection between field groups, taka pak se izprashta, no ne se vijda kakvo sme pratili v URL-a-->
+                <legend>Customer Details</legend>
+
+                <p> 
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first-name" id="first-name" placeholder="George" autofocus> <!-- tabindex =... could be alternative?-->
+                </p>
+
+                <p>
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="last-name" id="last-name" placeholder="Devis">
+                </p>
+
+                <p>
+                    <label for="male">Male</label>
+                    <input type="radio" name="sex" id="male">
+                    <label for="female">Female</label>
+                    <input type="radio" name="sex" id="female">
+                    <label for="other">Other</label>
+                    <input type="radio" name="sex" id="other">
+                </p>
+
+                <p>
+                    Preferred contact method:
+                    <label for="radio-email">Email</label>
+                    <input type="radio" name="contact-method" id="radio-email" checked>
+                    <label for="radio-phone">Phone</label>
+                    <input type="radio" name="contact-method" id="radio-phone">
+                </p>
+
+                <p>
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="kajisimaila@email.com">
+                </p>
+
+                <p>
+                    <label for="phone">Phone</label>
+                    <input type="tel" placeholder="+359123456">
+                </p>
+        
+                <label for="town">Town</label>
+    
+                <select id="town">
+                    <option value="Varna">Varna</option>
+                    <option value="Plovdiv">Plovdiv</option>
+                    <option value="Burgas">Burgas</option>
+                    <option value="Sofia">Sofia</option>
+                    <option value="Pleven">Pleven</option>
+                </select>
+
+            <p>
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age" min="19 max="70">
+            </p>
+
+            <p>
+                <input type="reset"> <!-- resets all info filled into all forms-->
+            </p>
+            
+        <p>
+        
+        <label for="language">Programming language</label>
+        <input list="language" name="language">
+        <datalist id="language"> <!--a ne select-->
+            <option value="Java">Java</option>   <!--we could put # instead of language after =, then it suggests as we write, no drop down menu-->
+            <option value="PHP">PHP</option>
+            <option value="C#">C#</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Python">Python</option>
+            <option value="Ruby">Ruby</option>
+            <option value="Other">Other</option>
+            <option value="NovEzik">NovEzik</option>
+        </datalist>
+        </p>
+
+        <textarea name="moreinfo" id="moreinfo" placeholder="More information..."></textarea>
+
+        <p>
+        <input type="checkbox" name="tandc" id="tandc"><label for="tandc">I agree with Terms and Conditions</label>
+        </p>
+        
+        <p>
+            <input type="submit" value="Send">
+            <input type="reset">
+        </p>
+    </fieldset> 
+    </form>
+</body>
+</hmtl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

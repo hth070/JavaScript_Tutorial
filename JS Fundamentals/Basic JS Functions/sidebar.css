@@ -1,0 +1,10 @@
+.main-sidebar ul {
+    padding: 1rem; /*like this is otvsqkyde*/
+    padding-right: 0;
+    padding-top: 0;
+
+}
+
+.main-sidebar > section {  /*> e selektor oboznachavash samo prekite deca na main-sidebar*/
+    padding-bottom: 1rem;
+}
