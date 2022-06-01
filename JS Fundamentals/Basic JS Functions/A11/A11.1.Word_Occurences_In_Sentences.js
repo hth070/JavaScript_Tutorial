@@ -8,7 +8,8 @@ function wordInSentence (ourString, wordToCheck) {
     }
 }
 
-wordInSentence('The waterfall was so high, that the child couldn’t see its peak.','the');
+wordInSentence('How do you plan on achieving that? How? How can you even think of that?',
+    'how');
 
 
 //Cannot read properties of null (reading 'length') when no matches
