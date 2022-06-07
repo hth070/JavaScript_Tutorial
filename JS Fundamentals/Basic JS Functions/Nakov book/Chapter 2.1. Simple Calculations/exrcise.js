@@ -1,5 +1,5 @@
-function calculateSquareArea([euajncbshj1]) {
-    let a = parseInt(euajncbshj1);
+function calculateSquareArea([arg1]) {
+    let a = parseInt(arg1);
     let area = a * a;
     console.log('Square area = ' + area);
 }
