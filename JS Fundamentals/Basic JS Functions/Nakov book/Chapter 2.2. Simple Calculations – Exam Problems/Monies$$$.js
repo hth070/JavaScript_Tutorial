@@ -1,5 +1,5 @@
-function Money([bitcoinNum, yuanNum, fee]) {
-    let result = 0;                                               // remove this for 100/100 on JUdge
+let calculateEuro = function([bitcoinNum, yuanNum, fee]) {
+    let result = 0;
     
     const bitcoinPrice = 1168;
     let bitcoinBgn = bitcoinNum * bitcoinPrice;
@@ -16,4 +16,4 @@ function Money([bitcoinNum, yuanNum, fee]) {
     return result.toFixed(2);
 }
 
-console.log(Money([1, 5, 5]));                                   // remove this for 100/100 on JUdge
+console.log(calculateEuro([1, 5, 5]));
