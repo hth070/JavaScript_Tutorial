@@ -6,8 +6,8 @@ function dailyEarnings([workDays, moneyPerDay,currencyRate]) {
     let netSalary = yearSalary - taxes;
     let salaryInLeva = netSalary * currencyRate;
     
-    return salaryInLeva / 365;
+    return (salaryInLeva / 365).toFixed(2);
     }
 
-    let result = dailyEarnings([10, 100, 1.82]);
+    let result = dailyEarnings([20, 100, 1.82]);
     console.log(result);
