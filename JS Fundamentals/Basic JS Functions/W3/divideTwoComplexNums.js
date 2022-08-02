@@ -27,4 +27,4 @@ function divideTwoComplexNums(real, imaginary) {
   }
    var a = new divideTwoComplexNums(2, -7);
    var b = new divideTwoComplexNums(4,  3);
-  console.log(divideTwoComplexNums_num_divide(a,b));
+  console.log(divideTwoComplexNums_num_divide(3,6));
