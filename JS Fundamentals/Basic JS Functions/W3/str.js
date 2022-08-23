@@ -1,12 +1,13 @@
-/*
+
 
 let str = 0;
 for (i=0;i<5;i++) {
-    str = str + i;
+    str = str + 1;
 }
 console.log(str);
 
 
+/*
 let i = 0;
 do {
   i += 1;
@@ -14,7 +15,6 @@ do {
 } while (i < 5);
 
 
-*/
 
 
 let a = 2;
@@ -26,5 +26,5 @@ console.log(a += 3); // addition
 console.log(b += ' world'); // concatenation
 // expected output: "hello world"
 
-
+*/
 
