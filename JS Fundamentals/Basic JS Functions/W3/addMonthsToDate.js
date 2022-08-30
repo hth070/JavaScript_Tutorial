@@ -1,0 +1,11 @@
+function addMonthsToDate(dt, n) 
+ {
+
+   return new Date(dt.setMonth(dt.getMonth() + n));      
+ }
+
+dt = new Date();
+console.log(addMonthsToDate(dt, 10).toString());  
+
+dt = new Date(2014,10,2);
+console.log(addMonthsToDate(dt, 10).toString());
